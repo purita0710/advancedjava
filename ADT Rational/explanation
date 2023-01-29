@@ -1,0 +1,33 @@
+Rational ADT
+
+Overview
+The Rational data structure stores amd manulates Rational numbers of the form x/y where x and y are integer numbers.
+This Rational type supports a multitude of arithmetic operations pertinent to Rational numbers;these operations are described below.
+Divide by zero is not permitted, thus the denominator can never be 0.
+A Rational with a zero denominator will invoke a run-time error that ends program execution.
+Rationals are automatically reduced to lowest common terms after all operations.
+Rationals with a negative value always carry the negative in the numerator; the denominator is always positive.
+
+Constructors
+default : A new Rational data type should default to the value of 0/1.
+copy : Create a new Rational type from an existing one. Rational r1(r2);
+Rational(x,y) : We should be able to specify a new Rational type by giving its numerator and denominator components. Rational r(2,3);
+
+Access
+setNumerator : Set the numerator to a specified value. r.setNumerator(3);
+setDenomiator : Set the denominator to a specified value. r.setDenominator(5);
+set : Set the rational to a specified value, first numerator then denominator.
+getNumerator : Return the numerator.
+getDenominator : Return the denominator.
+get : Return the value of the rational as a floating point.
+
+Operators
+add : Should support addition between two Rational numbers, and Rational and int.
+substract : Should support subtraction between two Rational numbers, and Rational and int.
+multiply : 	Should support multiplication between two Rational numbers, and Rational and int.
+divide : Should support division between two Rational numbers, and Rational and int.
+exponent : The ∧ operator should raise a Rational number to an integer power.
+negate : Negate the value of a Rational.
+equals : 	Returns true if two rationals are equal.
+compareTo : 	Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
